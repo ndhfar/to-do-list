@@ -1,0 +1,94 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --GRADIENT: linear-gradient(135deg, #10439f, #874ccc, #c65bcf, #f27bbd);
+  --WHITE: #fff7fc;
+  --BLACK: #39393995;
+  --WHITESMOKE: #e9e7e7;
+  --BLUE: #10439f;
+}
+
+/* Body */
+body {
+  background: var(--GRADIENT);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  background-color: var(--WHITE);
+  width: 100%;
+  max-width: 320px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 var(--BLACK);
+}
+
+/* title To Do List */
+.title {
+  margin-bottom: 8px;
+}
+
+/* Container Input */
+.cont-input {
+  background-color: var(--WHITESMOKE);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 15px;
+  margin-bottom: 13px;
+  border-radius: 20px;
+}
+
+.input-todo {
+  background-color: transparent;
+  flex: 1;
+  outline: none;
+  border: none;
+  padding: 8px 8px 8px 0;
+}
+
+.input-btn {
+  background-color: var(--BLUE);
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: var(--WHITESMOKE);
+  cursor: pointer;
+}
+
+/* To Do List */
+li {
+  list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 7px;
+}
+
+.bx-circle,
+.bxs-check-circle,
+.bx-x {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.bx-x {
+  position: absolute;
+  right: 0;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
